@@ -1,4 +1,4 @@
-### By Akshun Verma
+### By Chitesh Mahotra
 
 ## Project Name: Rock Paper Scissor Game
 
@@ -11,7 +11,7 @@
 
 
 #### Honest time to finish the project !
- - I had taken around 3 hours to finish this project.
+ - I had taken around 4 hours to finish this project.
 
 ### Link of the website
 - [Please Click Here](https://rock-paper-scissor-game45.netlify.app/)

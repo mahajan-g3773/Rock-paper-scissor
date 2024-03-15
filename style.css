@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  background:linear-gradient(90deg,rgb(16, 17, 16) 0%, rgb(37, 36, 36) 100%  ) ;
+     /* min-height: 100vh; */
+}
+
+#game{
+    background-color: rgb(10,10,10);
+    padding: 20px;
+    box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.4);
+    /* height: 90%;
+    width: 35%; */
+    height: 95vh;
+    width: 50vw;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.score{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.score p{
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    margin: 10px auto;
+    font-size: 30px;
+    width: 50px;
+   font-weight: 600;
+   border-radius: 50%;
+}
+
+.intro{
+    margin-top: 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: opacity .5s ease-in-out;
+}
+
+/* intro  */
+.intro{
+    text-align: center;
+    font-weight: 600;
+    /* display: none; */
+}
+.intro button{
+    font-size: 25px;
+    background-color: rgb(210, 35, 35);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    padding: 10px;
+    margin-top: 8rem;
+}
+.intro button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* match  */
+.match{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 4rem;
+    display: none;
+
+}
+.match h2{
+    text-align: center;
+}
+
+/* hands  */
+.hands {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  width: 80%;
+}
+.hands img{
+    height: 150px;
+    width: auto;
+}
+.hands .player-hand{
+    transform: rotateY(180deg);
+}
+
+
+
+/* buttons  */
+
+.options{
+    outline: none;
+    margin-top: 3rem;
+    border: none;
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+}
+.options button{
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-color: rgb(210, 35, 35);
+    color: #fff;
+    font-size: 20px;
+   transition: all .4s ease;
+}
+.options button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* using media query  */
+@media(max-width:780px)
+{
+   
+
+    #game{
+        height: 95vh;
+        width: 80vw;
+        margin-top: 10px;
+    }
+
+
+    /* score  */
+    .score h2{
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    /* // hands  */
+    .hands img{
+        height: 80px;
+        width: auto;
+    }
+
+    /* options  */
+    .options{
+        flex-direction: column;
+    }
+
+ 
+
+
+
+}
+
